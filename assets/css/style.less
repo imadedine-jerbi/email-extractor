@@ -1,0 +1,123 @@
+@mainColor: #2f5876;
+@textColor: #000000;
+@mainFont: 'Open Sans', sans-serif;
+@titleFont: 'Menlo', monospace;
+
+html {
+    font-family: @mainFont;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: @mainFont;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    min-width: 368px;
+}
+
+h1 {
+    font-family: @titleFont;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    color: @mainColor;
+}
+
+.modal-icons {
+    div {
+        color: @textColor;
+        outline: 0;
+        cursor: pointer;
+    }
+
+    height: 50px;
+    width: 100%;
+}
+
+img {
+    width: 30px;
+}
+
+.modal-header {
+    border-bottom: 0.5px solid #dadada;
+    padding: 16px;
+    position: relative;
+    display: inline-block;
+    width:  ~"calc(100% - 32px)";
+
+    .logo {
+        position: relative;
+        display: inline-block;
+        width: 242px;
+
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+    }
+
+    .statistics {
+        position: relative;
+        display: inline-block;
+
+        padding-left: 10px;
+        width: 80px;
+
+        .email,
+        .email-domain {
+            position: relative;
+            display: flex;
+            color: #007ab9;
+            font-weight: 600;
+            font-size: 14px;
+            justify-content: flex-end;
+
+            .fa{
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+.modal-content {
+    color: @mainColor;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 22px;
+
+    .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        align-content: center;
+
+        &:hover {
+            opacity: 0.4;
+        }
+
+        .fa {
+            font-size: 40px;
+            color: @mainColor;
+        }
+
+        a {
+            &:link {
+                color: @textColor;
+                outline: 0;
+                text-decoration: none;
+            }
+
+            &:visited {
+                color: @textColor;
+                outline: 0;
+                text-decoration: none;
+            }
+        }
+    }
+}

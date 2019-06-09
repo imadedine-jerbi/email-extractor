@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="chrome, extension, Email, Email domain, search, extraxt, csv, txt, download, copy, send email">
+  <meta name="description" content="Email extractor will retrieve all hidden emails in the active page. Copy, send to email, and export emails list as csv or txt file is possible.">
+  <meta name="author" content="Imadedine Jerbi">
+  <title>Email Extractor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/scripts/utils.js"></script>
+  <script src="/scripts/common.js"></script>
+  <script src="/scripts/popup.js"></script>
+</head>
+
+<body>
+  <div class="modal-header">
+    <h1 class="logo">
+      <a title="About Email Extractor" target="t_blank" href="https://github.com/ImadEddin/email-extractor"><img class="logo-icon" src="/assets/images/logo.svg"></a>Email Extractor
+    </h1>
+    <div class="statistics">
+      <div class="email" title="Emails"><div id="emailsUniqueCount"></div><i class="fa fa-search" aria-hidden="true"></i></div>
+      <div class="email-domain" title="Emails Domains"><div id="emailsDomainsUniqueCount"></div><i class="fa fa-globe" aria-hidden="true"></i></div>
+    </div>
+  </div>
+  <div class="modal-content" id="result">
+    <div class="results">
+    </div>
+  </div>
+  <div class="modal-icons">
+    <div class="flex-container">
+      <div class="flex">
+        <div title="Refresh search" id="refrech-result">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="flex">
+        <div title="Copy" id="copy" href="">
+          <i class="fa fa-clipboard" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="flex">
+        <div title="To Email" id="to-email" href="">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="flex">
+        <div title="Download Csv" id="download-csv">
+          <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="flex">
+        <div title="Download Txt" id="download-txt">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

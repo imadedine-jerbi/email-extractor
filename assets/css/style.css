@@ -1,0 +1,98 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  min-width: 368px;
+}
+h1 {
+  font-family: 'Menlo', monospace;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0;
+  color: #2f5876;
+}
+.modal-icons {
+  height: 50px;
+  width: 100%;
+}
+.modal-icons div {
+  color: #000000;
+  outline: 0;
+  cursor: pointer;
+}
+img {
+  width: 30px;
+}
+.modal-header {
+  border-bottom: 0.5px solid #dadada;
+  padding: 16px;
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 32px);
+}
+.modal-header .logo {
+  position: relative;
+  display: inline-block;
+  width: 242px;
+}
+.modal-header .logo .logo-icon {
+  vertical-align: text-bottom;
+  margin-right: 12px;
+}
+.modal-header .statistics {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
+  width: 80px;
+}
+.modal-header .statistics .email,
+.modal-header .statistics .email-domain {
+  position: relative;
+  display: flex;
+  color: #007ab9;
+  font-weight: 600;
+  font-size: 14px;
+  justify-content: flex-end;
+}
+.modal-header .statistics .email .fa,
+.modal-header .statistics .email-domain .fa {
+  padding-left: 5px;
+}
+.modal-content {
+  color: #2f5876;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 22px;
+}
+.flex-container .flex {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  align-content: center;
+}
+.flex-container .flex:hover {
+  opacity: 0.4;
+}
+.flex-container .flex .fa {
+  font-size: 40px;
+  color: #2f5876;
+}
+.flex-container .flex a:link {
+  color: #000000;
+  outline: 0;
+  text-decoration: none;
+}
+.flex-container .flex a:visited {
+  color: #000000;
+  outline: 0;
+  text-decoration: none;
+}

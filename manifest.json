@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Email Extractor Chrome™",
+  "description": "Email extractor will retrieve all hidden emails in the active page. Copy, send to email, and export emails list as csv or txt file is possible.",
+  "version": "1.0.0",
+  "author": "Imadedine Jerbi",
+  "homepage_url": "https://blog.imadedinejerbi.com/email-extractor",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title" : "Email extractor Chrome™"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "/scripts/page.js"
+      ]
+    }
+  ],
+  "background":
+  {
+    "scripts":["/scripts/utils.js", "/scripts/common.js", "/scripts/background.js"]
+  }
+}
