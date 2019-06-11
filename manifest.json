@@ -22,7 +22,7 @@
         "<all_urls>"
       ],
       "js": [
-        "/scripts/page.js"
+        "/scripts/fontawesome.js", "/scripts/page.js"
       ]
     }
   ],
